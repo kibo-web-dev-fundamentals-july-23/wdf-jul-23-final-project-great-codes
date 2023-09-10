@@ -1,14 +1,10 @@
-// Add an event listener to the anchor element with the id "reloadLink"
+// To reload page when logo is clicked.
 document.getElementById('reloadLink').addEventListener('click', function(event) {
-    // Prevent the default behavior of the link (preventing it from jumping to #home)
     event.preventDefault();
-
-    // Reload the page
     window.location.reload();
 });
 
-
-
+// To change the displayed text of an element
 const h1 = document.querySelector(".main");
 const subtext = document.querySelector("#subtext")
 const texts = ["Explore Dining Excellence & Delectable Cuisine", "Embark on a Food Journey & Savor Tantalizing Flavors", "Dive into Restaurant Discoveries & Exquisite Meals"
@@ -27,8 +23,7 @@ const variations = [
     "Within the realm of each tasty, Soulfully Spiced Chicken masterpiece and as the driving force behind remarkable customer satisfaction stands an individual with a deep passion and unwavering commitment."
 ];
 
-// You can access each variation using variations[index], e.g., variations[0] for the first variation.
-
+// - Change an element's colour
 
 let count = 0;
 let number =0;
@@ -40,16 +35,16 @@ subtext.innerText = variations[count]
 count = (count + 1) % texts.length;
 }
 let mainText = document.querySelector("#mainText");
-// Add a mouseover event listener to change the text color
 mainText.addEventListener("mouseover", function () {
-    // Change the text color to blue
     mainText.style.color = "#F14902";
 });
 
 mainText.addEventListener("mouseout", function () {
-    // Revert the text color to its original state (if needed)
-    mainText.style.color = ""; // Empty string means it will use the default color.
+    mainText.style.color = "";
 });
+
+
+// - Change an element's background colour
 
 let background = document.querySelector("body")
 let button2 = document.querySelector("#btn-2")
@@ -63,7 +58,6 @@ const colorCodes = [
     "#1E90FF",
     "#F1C40F",
     "#27AE60",
-    // "#FF5733",
     "#8E44AD",
     "#2C3E50",
     "#FFD700",
@@ -73,49 +67,38 @@ const colorCodes = [
 ];
 
 
-
-
-
-
 button2.onclick = function(){
     background.style.backgroundColor = colorCodes[number]
     number = (number + 1) % colorCodes.length;
 }
 
-let num = 0;
-
-const img2 = document.querySelector("#img-2");
-img2.addEventListener('click', e => {
-    const images = ["rice4.jpg", "spag.jpg"];
-    img2.src = `img/${images[num]}`;
-    num = (num + 1) % images.length
-    if (num === 0) {
-        // You have reached the end of the array, reset to the original image
-        img2.src = 'img/amala.jpg'; // Replace 'original-image-url.jpg' with your original image URL
-    }
-});
 
 // Creating a new Element
-// document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function()
 
-//   });
-// const myButton = document.querySelector("#myButton")
+const myButton = document.querySelector("#btn-4")
 
-// myButton.addEventListener('click', AddNew);
-// function AddNew (){
-//     const newDiv = document.createElement('div');
-//     newDiv.classList.add("div-shadow", "rounded-lg", "px-[100px]", "pr-8", "container", "max-w-md",)
+myButton.addEventListener('click', AddNew);
+function AddNew (){
+    const newDiv = document.createElement('div');
+    newDiv.classList.add("div-shadow", "rounded-lg", "px-[100px]", "pr-8", "container", "max-w-md",)
+    const amala = document.querySelector("#amala1")
 
-//     let img = document.createElement('img');
-//     img.src = "img/spag.jpg"
-//     // img.classList.add("mx-[100px]",)
-//     newDiv.appendChild(img)
-//     document.body.appendChild(newDiv);
-// console.log("add")
+    let text = document.createElement('p')
+    text.innerText = "New Dishes are Coming Soon..."
+    text.classList.add("text-white", "text-2xl")
 
-// }
+    amala.parentNode.insertBefore(newDiv, amala);
+
+    newDiv.appendChild(text);
+    myButton.removeEventListener('click', AddNew);
+
+console.log("add")
+
+}
 
 
+// Hide and Display and element
 
 
 const hideButton = document.querySelector("#btn-3")
@@ -137,14 +120,3 @@ function hideMenu(){
 
 }
 
-
-
-
-
-//   myButton.onclick = function(){
-//     let div = document.createElement('div');
-
-//     div.innerHTML = '<p>CreateElement example</p>';
-
-//     document.body.appendChild(div);
-//   }
