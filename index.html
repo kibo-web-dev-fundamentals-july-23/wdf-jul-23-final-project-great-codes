@@ -8,144 +8,85 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class= "bg-black">
-<!-- header section -->
-  <!-- logo imag -->
- <header class="flex " >
-<a href="#home" id="reloadLink"><img class="h-[157px] w-[157px]"src="img/greatfull.png" alt=""></a>
-<nav class="flex text-white align-middle bg-red absolute w-[700px]  top-0 right-0 py-[50px] space-x-[100px] " >
-<a href="#" >Home</a>
-<a href="#">About</a>
-<a href="#">Service</a>
-<a href="#">Help</a>
-</nav>
- </header>
+<body class="bg-black">
+    <!-- header section -->
+    <header class="flex">
+        <a href="#home" id="reloadLink"><img class="h-[157px] w-[157px]" src="img/greatfull.png" alt=""></a>
+        <nav class="flex text-white align-middle bg-red absolute w-[700px] top-0 right-0 py-[50px] space-x-[100px]">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
 
-<div class="content flex">
-
-<div class="headcontent  text-white w-full py-14 px-[80px] ">
-<h1 id="mainText" class=" main header text-7xl " > Discover Restaurant & Delicious Food</h1>
-<p id="subtext" class="pt-5 pl-[10px] italic text-xl ">Behind every delicious, Soulfully Spiced Chicken meal and at the forefront of every great customer experience stands a passionate and committed person.</p>
-<button id= "myButton" class= "rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
-
-<button id = "btn" class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Change Message</button>
-<button id = "btn-2" class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Background</button>
-</div>
-
-<div class="recipe h-[500px] w-6/12 " >
-    <div class="rounded-lg py-5 pr-8"  >
-        <img class="rounded-[80px] mb-4" src="img/rice.jpg" alt="">
-        <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Nigerian Jollof Rice</h2>
-
-<div class="flex items-center space-x-1">
-    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-    </svg>
-    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-    </svg>
-    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-    </svg>
-    <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-    </svg>
-    <svg class="w-4 h-4 text-white dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-    </svg>
-</div>
-
-        <p class="text-white">At the heart of every mouthwatering, Soulfully Spiced Chicken dish and at the forefront of every exceptional customer experience is a dedicated and enthusiastic individual. </p>
-    </div>
-</div>
-<div class="recipe  h-[500px] w-6/12 py-5 pr-8" >
-        <img id="img-2" class="rounded-[80px] w-[500px] h-[220px]" src="img/amala.jpg" alt="">
-        <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Nigerian Jollof Rice</h2>
-        <div class="flex items-center space-x-1">
-            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
-            <svg class="w-4 h-4 text-white dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-            </svg>
+    <!-- Moi Moi section -->
+    <div class="content flex">
+        <div class="headcontent text-white w-full py-14 px-[80px]">
+            <h1 id="mainText" class="main header text-7xl">Discover Restaurant & Delicious Food</h1>
+            <p id="subtext" class="pt-5 pl-[10px] italic text-xl">Behind every delicious, Soulfully Spiced Chicken meal and at the forefront of every great customer experience stands a passionate and committed person.</p>
+            <button id="myButton" class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
+            <button id="btn" class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Change Message</button>
+            <button id="btn-2" class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Background</button>
         </div>
 
-                <p class="text-white">At the heart of every mouthwatering, Soulfully Spiced Chicken dish and at the forefront of every exceptional customer experience is a dedicated and enthusiastic individual. </p>
+        <div class="recipe h-[500px] w-6/12">
+            <!-- Moi Moi content -->
+            <img class="rounded-[80px] mb-4" src="img/rice.jpg" alt="">
+            <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Nigerian Jollof Rice</h2>
+            <div class="flex items-center space-x-1">
             </div>
-</div>
-
-
-
-
-
-<!--moi moi section  -->
- <div class="content flex w-full">
-    <div class="headcontent  text-white w-full py-14 px-[30px] ">
-    <h5 class=" header text-5xl " > Nigerian Moi Moi</h5>
-    <p class="pt-5 pl-[10px] italic text-xl ">Order and enjoy a taste of the enriched nigerian beans</p>
-    <button class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
-    </div>
-
-    <div class="recipe h-[500px] w-6/12 " >
-        <div class="rounded-lg py-5 pr-8"  >
-            <img class="rounded-[80px] mb-4" src="img/moi-moi.jpg" alt="">
-            <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Nigerian Moi Moi</h2>
-
-    <div class="flex items-center space-x-1">
-        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-white dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-    </div>
-            <p class="text-white">Enjoy rich and premium moi moi, well seasoned with fish, eggs and other incentives.. </p>
+            <p class="text-white">At the heart of every mouthwatering, Soulfully Spiced Chicken dish and at the forefront of every exceptional customer experience is a dedicated and enthusiastic individual.</p>
         </div>
     </div>
-    <div class="recipe  h-[500px] w-6/12 py-5 pr-8" >
-            <img class="rounded-[80px] w-[500px]" src="img/moi-moi.jpg" alt="">
+
+    <!-- Amala section -->
+    <div class="content flex">
+        <div class="paragraph text-white w-full py-14 px-[80px]">
+            <p class="head text-5xl">Nigerian Amala</p>
+            <p class="pt-5 pl-[10px] italic text-xl">Order and enjoy a taste of the Nigerian's light-weighted Amala, made with love and passion just for you</p>
+            <button class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
         </div>
 
+        <div class="recipe h-[500px] w-6/12">
+            <!-- Amala content -->
+            <img class="rounded-[80px] mb-4" src="img/amala1.jpg" alt="">
+            <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Amala<br>Good food never tasted this good. There’s nothing like home-cooked Nigerian Amala, miss your work, but don’t miss this African cuisine</h2>
+        </div>
+    </div>
 
-<!-- Amala section -->
-<!-- <div class="content flex w-full">
-    <div class="paragraph  text-white w-full py-14 px-[30px] ">
-    <p class=" head text-5xl " > Nigerian Moi MOi</p>
-    <p class="pt-5 pl-[10px] italic text-xl ">Order and enjoy a taste of the enriched nigerian beans</p>
-    <button class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
-    </div> -->
+    <!-- Vegetable soup -->
+    <div class="content flex">
+        <div class="headcontent text-white w-full py-14 px-[80px]">
+            <h5 class="header text-5xl">Efo riro</h5>
+            <p class="pt-5 pl-[10px] italic text-xl">Behind every delicious Soulfully Spiced meal and at the forefront of every great customer experience stands a passionate and committed person</p>
+            <button class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
+        </div>
 
+        <div class="recipe h-[500px] w-6/12">
+            <!-- Vegetable soup content -->
+            <img class="rounded-[80px] mb-4" src="img/efo riro.jpeg" alt="">
+            <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Efo riro. Home is where African food is; it is not just a cuisine but also an experience</h2>
+        </div>
+    </div>
 
+    <!-- Spaghetti section -->
+    <div class="content flex">
+        <div class="headcontent text-white w-full py-14 px-[80px]">
+            <h5 class="header text-5xl">Classical Spaghetti</h5>
+            <p class="pt-5 pl-[10px] italic text-xl">Behind every delicious Soulfully Spiced meal and at the forefront of every great customer experience stands a passionate and committed person</p>
+            <button class="rounded-none bg-[#F14902] text-[#F6E7D8] font-bold uppercase p-2 px-5 m-4">Order Now</button>
+        </div>
 
+        <div class="recipe h-[500px] w-6/12">
+            <!-- Spaghetti content -->
+            <img class="rounded-[80px] mb-8" src="img/spag.jpg" alt="">
+            <h2 class="py-3 font-bold uppercase text-[#F6E7D8]">Spaghetti<br>There’s no greater feeling in the whole world than the delicious classical spaghetti. Keep a fork in hand, just in case.</h2>>
+        </div>
+    </div>
 
+    <!-- More sections can be added here -->
 
-
-
-
-
-
-
-
-
-
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
